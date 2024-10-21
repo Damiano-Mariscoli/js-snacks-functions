@@ -6,17 +6,16 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 // Dichiara la funzione qui.
 const checkChar = (names ,  char) => {
     char = char.toUpperCase()
-
+    const newNames = []
     for (let i = 0; i < names.length; i++){
         if (char === names[i][0].toUpperCase() ) {
-            console.log(names[i])
+            newNames.push(names[i])
         }
-    }
+    }return newNames
 
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-checkChar(names , 'a')
-
+console.log(checkChar(names , 'a'))
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]

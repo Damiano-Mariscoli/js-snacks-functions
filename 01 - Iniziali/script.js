@@ -5,14 +5,16 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
 const firstChar = (names) => { 
+    const newChar = []
     for (let i = 0 ; i < names.length; i++ ){
-        let newChar = names[i][0];
-        console.log(newChar)
-    }
+        
+        newChar.push(names[i][0])
+
+    }return(newChar)
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-firstChar(names)
+console.log((firstChar(names)))
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
