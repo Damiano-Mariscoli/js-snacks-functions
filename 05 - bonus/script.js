@@ -7,12 +7,22 @@ e buonasera se è sera (oltre le 17)
 
 const name = 'Mario';
 
+const ora = new Date().getHours()
+console.log(ora)
 
-// Dichiara la funzione qui.
+const saluto = (name) => {
+    if (ora <= 13 && ora > 4){
+        return `Buongiorno ${name}`
 
-
-// Invoca la funzione qui e stampa il risultato in console
-
-
-
+    }else if(ora > 17 ){
+        return `Buonasera ${name}`
+        
+    }else {
+        return `Buon pomeriggio ${name}`
+    }
+       
+    
+        
+}   
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
+console.log(saluto(name))
